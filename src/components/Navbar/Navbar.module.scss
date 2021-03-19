@@ -1,0 +1,44 @@
+.container{
+  display: flex;
+  justify-content: center;
+  height: 3.5rem;
+  width: 100vw;
+  background-color: var(--blue);
+  color: var(--white);
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 992px;
+    .logo{
+      font-family: 'Caveat', cursive;
+      font-weight: 700;
+      font-size: 2.25rem;
+      padding: 0 1.5rem;
+      color: var(--yellow)
+    }
+    .navbarLinks{
+      ul{
+        display: flex;
+        list-style: none;
+        
+        li{ 
+          padding: 0 0.5rem;
+
+          .icons{
+            font-size: 1.5rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+              font-size: 1.9rem;
+              color: var(--yellow);
+            }
+          
+          }
+
+        }
+      }
+    }
+  }
+}
