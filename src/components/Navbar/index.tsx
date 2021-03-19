@@ -1,7 +1,11 @@
 import styles from "./Navbar.module.scss";
-import { Facebook, Youtube, Instagram } from "../../assets/react-icons/";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
+  const router = useRouter();
+
+  let path = router.pathname;
+
   return (
     <header className={styles.container}>
       <div className={styles.wrapper}>
@@ -9,29 +13,29 @@ const Navbar = () => {
         <nav className={styles.navbarLinks}>
           <ul>
             <li>
-              <a
-                href="https://www.facebook.com/grupodeoracaomaanaim/"
-                target="_blank"
-              >
-                <Facebook className={styles.icons} />
+              <a className={styles.links} href="/">
+                Home
               </a>
             </li>
             <li>
-              <a
-                href="https://www.youtube.com/channel/UCoc1DrtiBJYu9DcLoPmb9fQ"
-                target="_blank"
-              >
-                <Youtube className={styles.icons} />
+              <a className={styles.links} href="/about">
+                Sobre
               </a>
             </li>
-            <li>
-              <a
-                href="https://www.instagram.com/maanaim.barbacena/"
-                target="_blank"
-              >
-                <Instagram className={styles.icons} />
-              </a>
-            </li>
+            {path != "/login" && path != "/dashboard" && (
+              <li>
+                <a className={styles.loginButton} href="/login">
+                  Log in
+                </a>
+              </li>
+            )}
+            {path == "/dashboard" && (
+              <li>
+                <a className={styles.loginButton} href="/">
+                  Log out
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
       </div>
