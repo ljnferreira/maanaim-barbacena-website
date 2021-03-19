@@ -4,7 +4,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Inicio | Maanaim Barbacena</title>
           <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
 
           <link rel="preconnect" href="https://fonts.gstatic.com" />

@@ -4,9 +4,14 @@ import Navbar from "../components/Navbar";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Navbar></Navbar>
-      <h1>hello world</h1>
-    </div>
+    <>
+      <Head key="Home">
+        <title>Inicio | Maanaim Barbacena</title>
+      </Head>
+      <div className={styles.container}>
+        <Navbar></Navbar>
+        <h1>hello world</h1>
+      </div>
+    </>
   );
 }
