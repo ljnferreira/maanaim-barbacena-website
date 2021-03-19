@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
       <div className={styles.container}>
         <Navbar></Navbar>
-        <h1>hello world</h1>
+        <h1>Home</h1>
       </div>
     </>
   );
