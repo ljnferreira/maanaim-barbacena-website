@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 export default function About() {
   return (
     <>
-      <Head key="About">
+      <Head key="Login">
         <title>Login | Maanaim Barbacena</title>
       </Head>
       <div className={styles.container}>
