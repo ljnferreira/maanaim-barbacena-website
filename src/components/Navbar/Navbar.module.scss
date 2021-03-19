@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 3.5rem;
+  width: 100vw;
+  background-color: var(--blue);
+  color: var(--white);
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 992px;
+    .logo {
+      font-family: "Caveat", cursive;
+      font-weight: 700;
+      font-size: 2.25rem;
+      padding: 0 1.5rem;
+      color: var(--yellow);
+    }
+    .navbarLinks {
+      ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+        li {
+          padding: 0 0.5rem;
+
+          .links {
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+            font-weight: 600;
+            &:hover {
+              color: var(--yellow);
+              text-decoration: underline;
+            }
+          }
+
+          .loginButton {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border: 2px solid var(--white);
+            border-radius: 3px;
+            font-weight: 600;
+            transition: all 300ms ease-in-out;
+
+            &:hover {
+              color: var(--blue);
+              background-color: var(--white);
+            }
+            &:focus {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
