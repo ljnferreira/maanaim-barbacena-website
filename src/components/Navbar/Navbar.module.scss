@@ -1,7 +1,7 @@
 .container {
   display: flex;
   justify-content: center;
-  height: 5rem;
+  height: 2rem;
   width: 100vw;
   background-color: var(--translucid);
   color: var(--white);
@@ -11,7 +11,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
-    max-width: 992px;
+    //max-width: 992px;
     .logo {
       font-family: "Caveat", cursive;
       font-weight: 700;

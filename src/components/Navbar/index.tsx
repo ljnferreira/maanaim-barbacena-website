@@ -1,7 +1,7 @@
 import styles from "./Navbar.module.scss";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const router = useRouter();
 
   let path = router.pathname;
@@ -22,7 +22,7 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className={styles.links} href="/about">
+              <a className={styles.links} href="/contact">
                 Contato
               </a>
             </li>
