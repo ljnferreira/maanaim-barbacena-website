@@ -1,0 +1,17 @@
+.container {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--yellow);
+  background-color: var(--blue);
+  border: 2px solid var(--yellow);
+  border-radius: 50%;
+  font-size: 70px;
+  box-shadow: 0 0 5 10 var(--container-shadow);
+  &:hover {
+    background-color: var(--yellow);
+    color: var(--blue);
+  }
+}
