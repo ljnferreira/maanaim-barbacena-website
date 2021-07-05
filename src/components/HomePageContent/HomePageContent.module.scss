@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 3.5rem;
+  width: 100%;
+  min-height: 45vh;
+  .wrapper {
+    max-width: 65%;
+    .title {
+      font-size: 72px;
+      font-weight: 600;
+
+      background-image: var(--title-linear-gradient);
+      background-size: 100%;
+      background-clip: text;
+      color: transparent;
+    }
+    .subtitle {
+      font-size: 24px;
+      color: var(--yellow);
+      max-width: 55%;
+    }
+  }
+}

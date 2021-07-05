@@ -1,9 +1,11 @@
 import {
   FaFacebookSquare,
   FaYoutube,
-  FaInstagram
+  FaInstagram,
+  FaAngleDown
 } from "react-icons/fa";
 
-export const Facebook = FaFacebookSquare; 
-export const Youtube = FaYoutube;
-export const Instagram = FaInstagram;
+export const FacebookIcon = FaFacebookSquare; 
+export const YoutubeIcon = FaYoutube;
+export const InstagramIcon = FaInstagram;
+export const ArrowDownIcon = FaAngleDown;
