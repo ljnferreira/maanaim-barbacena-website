@@ -9,7 +9,6 @@ const Navbar = () => {
   return (
     <header className={styles.container}>
       <div className={styles.wrapper}>
-        <span className={styles.logo}>Maanaim</span>
         <nav className={styles.navbarLinks}>
           <ul>
             <li>
@@ -19,7 +18,12 @@ const Navbar = () => {
             </li>
             <li>
               <a className={styles.links} href="/about">
-                Sobre
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a className={styles.links} href="/about">
+                Contato
               </a>
             </li>
             {path != "/login" && path != "/dashboard" && (
