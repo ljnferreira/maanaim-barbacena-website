@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.scss";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const router = useRouter();
@@ -12,34 +13,32 @@ const Navbar: React.FC = () => {
         <nav className={styles.navbarLinks}>
           <ul>
             <li>
-              <a className={styles.links} href="/">
-                Home
-              </a>
+              <Link href="/">
+                <a className={styles.links}>Home</a>
+              </Link>
             </li>
             <li>
-              <a className={styles.links} href="/about">
-                Sobre nós
-              </a>
+              <Link href="#about">
+                <a className={styles.links}>Sobre nós</a>
+              </Link>
             </li>
             <li>
-              <a className={styles.links} href="/contact">
-                Contato
-              </a>
+              <Link href="#contact">
+                <a className={styles.links}>Contato</a>
+              </Link>
             </li>
-            {path != "/login" && path != "/dashboard" && (
-              <li>
-                <a className={styles.loginButton} href="/login">
-                  Log in
-                </a>
-              </li>
-            )}
-            {path == "/dashboard" && (
-              <li>
-                <a className={styles.loginButton} href="/">
-                  Log out
-                </a>
-              </li>
-            )}
+            <li>
+              {path != "/login" && path != "/dashboard" && (
+                <Link href="/login">
+                  <a className={styles.loginButton}>Log in</a>
+                </Link>
+              )}
+              {path == "/dashboard" && (
+                <Link href="/">
+                  <a className={styles.loginButton}>Log out</a>
+                </Link>
+              )}
+            </li>
           </ul>
         </nav>
       </div>
