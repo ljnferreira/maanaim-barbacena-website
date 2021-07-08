@@ -1,3 +1,12 @@
+@keyframes appearGradually {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .container {
   display: flex;
   align-items: flex-start;
@@ -6,6 +15,7 @@
   padding-left: 3.5rem;
   width: 100%;
   min-height: 45vh;
+  animation: appearGradually 2000ms ease-in-out;
   .wrapper {
     max-width: 65%;
     .title {
