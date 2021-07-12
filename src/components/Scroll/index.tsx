@@ -6,7 +6,7 @@ import Link from "next/link";
 const Scroll: React.FC = () => {
   return (
     <div className={styles.container}>
-      <Link href="#sobre">
+      <Link href="#about">
         <ArrowDownIcon />
       </Link>
     </div>
