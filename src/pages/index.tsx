@@ -10,14 +10,15 @@ export default function Home() {
       <Head key="Home">
         <title>Inicio | Maanaim Barbacena</title>
       </Head>
-      <div className={styles.container}>
+      <section className={styles.landingPage}>
         <Navbar></Navbar>
         <HomePageContent
           title="G. O. Maanaim Barbacena"
           subtitle="Perceber que a natureza dá sinais do amor de Deus..."
         />
         <Scroll />
-      </div>
+      </section>
+      <section id="about" className={styles.aboutPage}></section>
     </>
   );
 }
